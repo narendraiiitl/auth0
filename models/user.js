@@ -3,7 +3,7 @@ const mongoose= require('mongoose');
 const passportlocalmongoose=require('passport-local-mongoose');
 const userschema= new mongoose.Schema({
     username:String,
-    email:String,
+    googleid:String,
     password:String
 })
 userschema.plugin(passportlocalmongoose);
